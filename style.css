@@ -47,11 +47,6 @@ h1 {
   transform: scale(1.05);
 }
 
-.fallback {
-  color: #666;
-  font-size: 0.9rem;
-  margin-top: 10px;
-}
 footer {
   bottom: 0;
   background: #000;
@@ -75,4 +70,16 @@ footer img {
   border-radius: 4px;
   cursor: not-allowed;
   opacity: 0.6;
+}
+/* Fallback message positioned below AR button */
+.fallback {
+  position: fixed;
+  top: calc(50% + 170px); /* 50% + (half of #ar-button height + gap) */
+  left: 50%;
+  transform: translateX(-50%);
+  color: #666;
+  font-size: 0.9rem;
+  max-width: 90vw;
+  text-align: center;
+  z-index: 1001;
 }
