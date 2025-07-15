@@ -83,11 +83,15 @@ footer img {
   opacity: 0.6;
 }
 
-/* ✅ New style for project number */
+/* Updated style for project number - smaller and bottom aligned */
 .project-number {
   background: none !important;
   color: #fff;
-  font-size: 0.9rem;
+  font-size: 0.7rem;           /* Smaller font size */
   margin-left: 8px;
-  vertical-align: middle;
+  display: inline-block;
+  vertical-align: baseline;    /* Bottom align with Q-rack text */
+  line-height: 1;              /* Tighter line spacing */
+  position: relative;
+  bottom: -2px;                /* Nudge down for perfect alignment */
 }
