@@ -82,3 +82,12 @@ footer img {
   cursor: not-allowed;
   opacity: 0.6;
 }
+
+/* ✅ New style for project number */
+.project-number {
+  background: none !important;
+  color: #fff;
+  font-size: 0.9rem;
+  margin-left: 8px;
+  vertical-align: middle;
+}
