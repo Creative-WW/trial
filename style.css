@@ -6,6 +6,8 @@ body {
   text-align: center;
   padding: 50px 0;
 }
+
+/* Remove existing h1 fixed styles since we are replacing header */
 h1, footer {
   position: fixed;
   width: 100%;
@@ -15,12 +17,49 @@ h1, footer {
 }
 h1 {
   top: 0;
-  background: #E10600;
+  background: #E10600; /* Removed because replaced by header */
   color: #fff;
   margin: 0;
   padding: 10px;
   font-size: 1.4rem;
 }
+
+/* New header container with flex */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px; /* adjust if needed */
+  display: flex;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+/* Red block - 90% width */
+.red-block {
+  width: 90%;
+  background-color: #E10600; /* your red */
+}
+
+/* Grey block - 10% width, with project number */
+.grey-block {
+  width: 10%;
+  background-color: grey;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Adjust main content padding to not hide under fixed header */
+main {
+  padding-top: 50px; /* same height as header */
+}
+
+/* Rest of your styles */
 #ar-button {
   margin: 100px auto 20px;
   max-width: 600px;
