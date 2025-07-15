@@ -49,9 +49,9 @@ h1 {
 
 .fallback {
   position: fixed;
-  top: 50%;
+  top: 20%;
   left: 50%;
-  transform: translate(-50%, -90%);
+  transform: translate(-50%, -50%);
   color: #666;
   font-size: 0.9rem;
   margin: 0;
