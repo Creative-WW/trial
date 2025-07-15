@@ -33,6 +33,20 @@ h1 {
   font-size: 1.4rem;
 }
 
+/* NEW: Project number below header */
+.project-number {
+  position: fixed;
+  top: 50px;              /* directly below header (50px header height) */
+  right: 10px;            /* right side padding */
+  font-size: 0.9rem;
+  color: black;           /* black font */
+  background: transparent;
+  z-index: 1000;
+  font-family: sans-serif;
+  user-select: none;
+}
+
+/* Existing styles */
 #ar-button {
   max-width: 600px;
   width: 90vw; /* scale based on viewport */
@@ -83,7 +97,7 @@ footer img {
   opacity: 0.6;
 }
 
-/* Updated style for project number - smaller and bottom aligned */
+/* Remove hiding of project number */
 .project-number {
-  display: none !important;
+  /* removed display:none */
 }
