@@ -21,14 +21,14 @@ const isAndroid = /Android/i.test(navigator.userAgent);
 if (isiOS) {
   arButton.innerHTML = `
     <a rel="ar" href="${config.usdz}" aria-label="View ${config.title} in AR on iOS">
-      <img src="${config.image}" alt="View in AR" loading="eager" />
+      <img src="${config.image}" alt="View in AR" loading="eager" class="fixed-center-image" />
     </a>
   `;
 } else if (isAndroid) {
   const intentUrl = `intent://arvr.google.com/scene-viewer/1.0?file=${encodeURIComponent(config.glb)}&mode=ar_preferred#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;end;`;
   arButton.innerHTML = `
     <a href="${intentUrl}" aria-label="View ${config.title} in AR on Android">
-      <img src="${config.image}" alt="View in AR" loading="eager" />
+      <img src="${config.image}" alt="View in AR" loading="eager" class="fixed-center-image" />
     </a>
   `;
 } else {
