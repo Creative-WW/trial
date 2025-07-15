@@ -26,8 +26,8 @@ h1 {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 300vw;           /* responsive width */
-  height: 300vw;          /* responsive height */
+  width: 275vw;           /* responsive width */
+  height: 275vw;          /* responsive height */
   max-width: 400px;      /* max size */
   max-height: 400px;     /* max size */
   transform: translate(-50%, -50%);
@@ -48,10 +48,16 @@ h1 {
 }
 
 .fallback {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
   color: #666;
   font-size: 0.9rem;
-  margin-top: 10px;
+  margin: 0;
+  z-index: 1002;
 }
+
 footer {
   bottom: 0;
   background: #000;
