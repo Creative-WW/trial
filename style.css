@@ -1,19 +1,20 @@
-body {
+/* Reset and base styles */
+html, body {
   margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Disable scrolling */
   font-family: sans-serif;
   background: #f9f9f9;
   text-align: center;
-  padding: 50px 0;
 }
+
 h1, footer {
   position: fixed;
   width: 100%;
   left: 0;
   box-sizing: border-box;
   z-index: 1000;
-}
-h1 {
-  top: 0;
   background: #E10600;
   color: #fff;
   margin: 0;
@@ -21,40 +22,11 @@ h1 {
   font-size: 1.4rem;
 }
 
-.ar-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
-  padding-top: 60px; /* space for header */
-  padding-bottom: 60px; /* space for footer */
-  box-sizing: border-box;
+/* Position header and footer */
+h1 {
+  top: 0;
 }
 
-#ar-button {
-  max-width: 90vw;
-  width: 100%;
-  padding: 0 20px;
-}
-#ar-button img {
-  width: 100%;
-  height: auto;
-  max-width: 600px;
-  object-fit: contain;
-  cursor: pointer;
-  transition: transform 0.2s;
-  display: block;
-}
-#ar-button img:hover {
-  transform: scale(1.05);
-}
-
-.fallback {
-  color: #666;
-  font-size: 0.9rem;
-  margin-top: 10px;
-}
 footer {
   bottom: 0;
   background: #000;
@@ -64,10 +36,61 @@ footer {
   justify-content: space-between;
   align-items: center;
   font-size: 0.7rem;
+  z-index: 1000;
 }
+
 footer img {
   height: 20px;
 }
+
+/* Wrapper fixed full screen */
+.ar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px 60px 20px; /* space for header/footer */
+  box-sizing: border-box;
+  background: #f9f9f9;
+  z-index: 1;
+}
+
+/* AR button container */
+#ar-button {
+  max-width: 90vw;
+  max-height: 90vh;
+  width: 100%;
+  height: auto;
+}
+
+/* The image itself */
+#ar-button img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  max-height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+  display: block;
+  transition: transform 0.2s;
+}
+
+#ar-button img:hover {
+  transform: scale(1.05);
+}
+
+/* Fallback message */
+.fallback {
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Disabled button */
 .disabled-btn {
   margin-top: 20px;
   padding: 10px 20px;
