@@ -1,21 +1,11 @@
 /* style.css */
-html, body {
-  height: 100%; /* full height for flex centering */
+body {
   margin: 0;
   font-family: sans-serif;
   background: #f9f9f9;
   text-align: center;
-  padding-top: 50px; /* space for fixed header */
-  padding-bottom: 40px; /* space for fixed footer */
-  box-sizing: border-box;
-
-  /* Flexbox to center content */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* vertical center */
-  align-items: center;     /* horizontal center */
+  padding: 50px 0;
 }
-
 h1, footer {
   position: fixed;
   width: 100%;
@@ -23,7 +13,6 @@ h1, footer {
   box-sizing: border-box;
   z-index: 1000;
 }
-
 h1 {
   top: 0;
   background: #E10600;
@@ -32,44 +21,25 @@ h1 {
   padding: 10px;
   font-size: 1.4rem;
 }
-
-/* NEW: Project number below header */
-.project-number {
-  position: fixed;
-  top: 50px;              /* directly below header (50px header height) */
-  right: 10px;            /* right side padding */
-  font-size: 0.9rem;
-  color: black;           /* black font */
-  background: transparent;
-  z-index: 1000;
-  font-family: sans-serif;
-  user-select: none;
-}
-
-/* Existing styles */
 #ar-button {
+  margin: 100px auto 20px;
   max-width: 600px;
-  width: 90vw; /* scale based on viewport */
-  margin: 0 auto;
+  width: 100vw;
 }
-
 #ar-button img {
   width: 100%;
   cursor: pointer;
   transition: transform 0.2s;
   display: block;
 }
-
 #ar-button img:hover {
   transform: scale(1.05);
 }
-
 .fallback {
   color: #666;
   font-size: 0.9rem;
   margin-top: 10px;
 }
-
 footer {
   bottom: 0;
   background: #000;
@@ -80,11 +50,9 @@ footer {
   align-items: center;
   font-size: 0.7rem;
 }
-
 footer img {
   height: 20px;
 }
-
 .disabled-btn {
   margin-top: 20px;
   padding: 10px 20px;
