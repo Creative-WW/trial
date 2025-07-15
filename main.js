@@ -32,6 +32,6 @@ if (isiOS) {
     </a>
   `;
 } else {
-  arButton.innerHTML = `<button class="disabled-btn" disabled>AR Not Available</button>`;
   fallback.textContent = 'AR is only supported on iOS and Android devices.';
+  arButton.innerHTML = `<button class="disabled-btn" disabled>AR Not Available</button>`;
 }
