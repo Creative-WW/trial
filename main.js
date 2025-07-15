@@ -4,18 +4,7 @@ const config = window.projectConfig;
 document.title = config.title + " AR";
 document.getElementById('page-title').textContent = config.title + " AR";
 document.getElementById('meta-description').setAttribute("content", config.description);
-
-// Inject title and project number dynamically into header spans
-const titleTextSpan = document.querySelector('#project-title .title-text');
-const projectNumberSpan = document.querySelector('#project-title .project-number');
-
-if (titleTextSpan) {
-  titleTextSpan.textContent = config.title;
-}
-
-if (projectNumberSpan && config.projectNumber) {
-  projectNumberSpan.textContent = config.projectNumber;
-}
+document.getElementById('project-title').textContent = config.title;
 
 // Set footer logo dynamically
 const footerLogo = document.getElementById('footer-logo');
