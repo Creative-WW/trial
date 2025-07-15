@@ -31,6 +31,27 @@ h1 {
   margin: 0;
   padding: 10px;
   font-size: 1.4rem;
+
+  /* Make relative for absolute positioning inside */
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* keep main header text centered */
+  position: relative;
+}
+
+/* Project number positioned bottom right of header */
+.project-number {
+  position: absolute;
+  bottom: 8px;       /* spacing from bottom */
+  right: 12px;       /* spacing from right */
+  color: black;      /* black text */
+  font-size: 0.8rem; /* smaller font size */
+  background: none !important;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  vertical-align: baseline;
 }
 
 #ar-button {
@@ -81,17 +102,4 @@ footer img {
   border-radius: 4px;
   cursor: not-allowed;
   opacity: 0.6;
-}
-
-/* Updated style for project number - smaller and bottom aligned */
-.project-number {
-  background: none !important;
-  color: #fff;
-  font-size: 0.8rem;           /* Smaller font size */
-  margin-left: 4px;
-  display: inline-block;
-  vertical-align: baseline;    /* Bottom align with Q-rack text */
-  line-height: 1;              /* Tighter line spacing */
-  position: relative;
-  bottom: -2px;                /* Nudge down for perfect alignment */
 }
