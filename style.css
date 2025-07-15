@@ -1,4 +1,3 @@
-/* style.css */
 body {
   margin: 0;
   font-family: sans-serif;
@@ -22,12 +21,12 @@ h1 {
   font-size: 1.4rem;
 }
 #ar-button {
-  margin: 100px auto 20px;
-  max-width: 600px;
-  width: 100vw;
+  margin: 0;          /* Remove margin for fixed image */
+  width: 0;           /* Shrink container */
+  height: 0;
+  overflow: visible;  /* Allow fixed image to be visible */
 }
 #ar-button img {
-  width: 100%;
   cursor: pointer;
   transition: transform 0.2s;
   display: block;
@@ -63,4 +62,17 @@ footer img {
   border-radius: 4px;
   cursor: not-allowed;
   opacity: 0.6;
+}
+
+/* New style for fixed centered Q Rack image */
+.fixed-center-image {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+  z-index: 1500;
+  object-fit: contain;
+  pointer-events: none; /* Let clicks pass through */
 }
