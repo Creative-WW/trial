@@ -1,3 +1,4 @@
+/* style.css */
 body {
   margin: 0;
   font-family: sans-serif;
@@ -5,7 +6,6 @@ body {
   text-align: center;
   padding: 50px 0;
 }
-
 h1, footer {
   position: fixed;
   width: 100%;
@@ -13,7 +13,6 @@ h1, footer {
   box-sizing: border-box;
   z-index: 1000;
 }
-
 h1 {
   top: 0;
   background: #E10600;
@@ -22,30 +21,25 @@ h1 {
   padding: 10px;
   font-size: 1.4rem;
 }
-
 #ar-button {
-  margin: 0;          /* Remove margin for fixed image */
-  width: 0;           /* Shrink container */
-  height: 0;
-  overflow: visible;  /* Allow fixed image to be visible */
+  margin: 100px auto 20px;
+  max-width: 600px;
+  width: 100vw;
 }
-
 #ar-button img {
+  width: 100%;
   cursor: pointer;
   transition: transform 0.2s;
   display: block;
 }
-
 #ar-button img:hover {
   transform: scale(1.05);
 }
-
 .fallback {
   color: #666;
   font-size: 0.9rem;
   margin-top: 10px;
 }
-
 footer {
   bottom: 0;
   background: #000;
@@ -56,11 +50,9 @@ footer {
   align-items: center;
   font-size: 0.7rem;
 }
-
 footer img {
   height: 20px;
 }
-
 .disabled-btn {
   margin-top: 20px;
   padding: 10px 20px;
@@ -71,33 +63,4 @@ footer img {
   border-radius: 4px;
   cursor: not-allowed;
   opacity: 0.6;
-}
-
-/* Responsive fixed centered Q Rack image */
-.fixed-center-image {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 40vw;          /* 40% of viewport width */
-  max-width: 320px;     /* max size on large screens */
-  min-width: 180px;     /* minimum size on small screens */
-  height: auto;         /* maintain aspect ratio */
-  transform: translate(-50%, -50%);
-  z-index: 1500;
-  object-fit: contain;
-  pointer-events: none; /* Let clicks pass through */
-}
-
-/* Larger screens (tablets and up) */
-@media (min-width: 768px) {
-  .fixed-center-image {
-    width: 300px;       /* fixed size on medium+ screens */
-  }
-}
-
-/* Extra large screens (desktops) */
-@media (min-width: 1200px) {
-  .fixed-center-image {
-    width: 400px;       /* bigger size on wide screens */
-  }
 }
