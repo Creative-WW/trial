@@ -26,8 +26,8 @@ h1 {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 30vw;           /* responsive width */
-  height: 30vw;          /* responsive height */
+  width: 300vw;           /* responsive width */
+  height: 300vw;          /* responsive height */
   max-width: 400px;      /* max size */
   max-height: 400px;     /* max size */
   transform: translate(-50%, -50%);
