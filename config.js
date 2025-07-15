@@ -5,5 +5,6 @@ window.projectConfig = {
   image: "assets/Q Rack.png", // used for AR button
   usdz: "assets/AR_DQ3358.usdz",
   glb: "assets/AR_DQ3358.glb",
-  logo: "assets/dq_logo.png" // company logo
+  logo: "assets/dq_logo.png", // company logo
+  projectNumber: "dq0000"     // added project number here
 };
