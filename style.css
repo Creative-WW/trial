@@ -1,15 +1,11 @@
-/* Reset and base */
-html, body {
+/* style.css */
+body {
   margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow: hidden; /* prevent scrolling */
   font-family: sans-serif;
   background: #f9f9f9;
   text-align: center;
+  padding: 50px 0;
 }
-
-/* Header fixed top */
 h1, footer {
   position: fixed;
   width: 100%;
@@ -17,8 +13,6 @@ h1, footer {
   box-sizing: border-box;
   z-index: 1000;
 }
-
-/* Header styles */
 h1 {
   top: 0;
   background: #E10600;
@@ -27,8 +21,25 @@ h1 {
   padding: 10px;
   font-size: 1.4rem;
 }
-
-/* Footer fixed bottom */
+#ar-button {
+  margin: 100px auto 20px;
+  max-width: 600px;
+  width: 100vw;
+}
+#ar-button img {
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.2s;
+  display: block;
+}
+#ar-button img:hover {
+  transform: scale(1.05);
+}
+.fallback {
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
 footer {
   bottom: 0;
   background: #000;
@@ -39,55 +50,9 @@ footer {
   align-items: center;
   font-size: 0.7rem;
 }
-
 footer img {
   height: 20px;
 }
-
-/* Center the clickable image fixed in viewport */
-#ar-button {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 100vw;
-  max-height: 100vh; /* leave room for header/footer */
-  width: auto;
-  height: auto;
-  cursor: pointer;
-  z-index: 900;
-  /* remove margins */
-  margin: 0;
-}
-
-/* Make image responsive and fit inside container */
-#ar-button img {
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
-  margin: 0 auto;
-  transition: transform 0.2s;
-  user-select: none;
-}
-
-/* Slight hover scale effect */
-#ar-button img:hover {
-  transform: scale(1.05);
-}
-
-/* Fallback text position */
-.fallback {
-  position: fixed;
-  bottom: 50px; /* above footer */
-  width: 100%;
-  text-align: center;
-  color: #666;
-  font-size: 0.9rem;
-  pointer-events: none;
-  user-select: none;
-}
-
-/* Disabled button */
 .disabled-btn {
   margin-top: 20px;
   padding: 10px 20px;
