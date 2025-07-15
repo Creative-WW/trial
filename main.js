@@ -23,7 +23,7 @@ if (footerLogo && config.logo) {
   footerLogo.src = config.logo;
 }
 
-// AR logic (unchanged) ...
+// AR logic
 const arButton = document.getElementById('ar-button');
 const fallback = document.getElementById('fallback');
 const isiOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
