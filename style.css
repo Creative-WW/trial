@@ -87,8 +87,8 @@ footer img {
 .project-number {
   background: none !important;
   color: #fff;
-  font-size: 0.7rem;           /* Smaller font size */
-  margin-left: 8px;
+  font-size: 0.8rem;           /* Smaller font size */
+  margin-left: 4px;
   display: inline-block;
   vertical-align: baseline;    /* Bottom align with Q-rack text */
   line-height: 1;              /* Tighter line spacing */
