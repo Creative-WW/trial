@@ -31,6 +31,21 @@ h1 {
   margin: 0;
   padding: 10px;
   font-size: 1.4rem;
+
+  /* Flex layout for title and project number */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* space between title and project number */
+}
+
+.project-number {
+  font-weight: normal;
+  font-size: 1rem;
+  background: #c70000; /* slightly darker red */
+  padding: 2px 8px;
+  border-radius: 4px;
+  user-select: none; /* prevent accidental text selection */
 }
 
 #ar-button {
