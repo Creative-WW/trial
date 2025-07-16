@@ -5,5 +5,5 @@ window.projectConfig = {
   usdz: "assets/AR_DQ3358.usdz",
   glb: "assets/AR_DQ3358.glb",
   logo: "assets/dq_logo.png", // company logo
-  projectNumber: "DQ3358" // NEW: dynamic project number
+  projectNumber: "DQ3358" // NEW: project number
 };
