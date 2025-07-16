@@ -9,33 +9,22 @@ body {
   padding: 50px 0;
 }
 
-/* Updated header */
-#header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  background: #ea0000;
-  color: #fff;
-  font-size: 1.4rem;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50px; /* fixed height */
+h1,
+footer {
   position: fixed;
-  z-index: 1000;
+  width: 100%;
+  left: 0;
   box-sizing: border-box;
+  z-index: 1000;
 }
 
-#project-number {
-  background-color: #e0e0e0;
-  color: #333;
-  font-size: 0.9rem;
-  padding: 0 12px;
-  border-radius: 0;
-  display: flex;
-  align-items: center;
-  height: 100%; /* match red header height */
+h1 {
+  top: 0;
+  background: #ea0000;
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+  font-size: 1.4rem;
 }
 
 /* Responsive AR button */
@@ -43,14 +32,14 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 275vw;
-  height: 275vw;
-  max-width: 400px;
-  max-height: 400px;
+  width: 275vw; /* responsive width */
+  height: 275vw; /* responsive height */
+  max-width: 400px; /* max size */
+  max-height: 400px; /* max size */
   transform: translate(-50%, -50%);
   cursor: pointer;
-  z-index: 1001;
-  margin: 0;
+  z-index: 1001; /* above header/footer */
+  margin: 0; /* reset margin */
 }
 
 #ar-button img {
@@ -85,9 +74,6 @@ footer {
   justify-content: space-between;
   align-items: center;
   font-size: 0.7rem;
-  position: fixed;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 footer img {
