@@ -1,23 +1,20 @@
 (() => {
   const config = window.projectConfig;
 
+  // Cache DOM elements once
   const pageTitle = document.getElementById('page-title');
   const metaDescription = document.getElementById('meta-description');
   const projectTitle = document.getElementById('project-title');
-  const projectNumber = document.getElementById('project-number');
   const footerLogo = document.getElementById('footer-logo');
   const arButton = document.getElementById('ar-button');
   const fallback = document.getElementById('fallback');
 
+  // Update meta and page content
   if (config) {
     document.title = `${config.title} AR`;
     pageTitle.textContent = `${config.title} AR`;
     metaDescription.setAttribute("content", config.description);
     projectTitle.textContent = config.title;
-
-    if (projectNumber && config.projectNumber) {
-      projectNumber.textContent = config.projectNumber;
-    }
 
     if (footerLogo && config.logo) {
       footerLogo.src = config.logo;
