@@ -21,19 +21,21 @@ h1 {
   font-size: 1.4rem;
 }
 
+/* Responsive AR button */
 #ar-button {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 275vw;
-  height: 275vw;
-  max-width: 400px;
-  max-height: 400px;
+  width: 275vw;           /* responsive width */
+  height: 275vw;          /* responsive height */
+  max-width: 400px;      /* max size */
+  max-height: 400px;     /* max size */
   transform: translate(-50%, -50%);
   cursor: pointer;
-  z-index: 1001;
-  margin: 0;
+  z-index: 1001;         /* above header/footer */
+  margin: 0;             /* reset margin */
 }
+
 #ar-button img {
   width: 100%;
   height: 100%;
