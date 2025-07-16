@@ -1,3 +1,5 @@
+// main.js
+
 (() => {
   const config = window.projectConfig;
 
