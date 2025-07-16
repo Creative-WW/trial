@@ -1,10 +1,10 @@
 (() => {
   const config = window.projectConfig;
 
-  // Cache DOM elements once
   const pageTitle = document.getElementById('page-title');
   const metaDescription = document.getElementById('meta-description');
-  const header = document.getElementById('header');
+  const projectTitle = document.getElementById('project-title');
+  const projectNumber = document.getElementById('project-number');
   const footerLogo = document.getElementById('footer-logo');
   const arButton = document.getElementById('ar-button');
   const fallback = document.getElementById('fallback');
@@ -13,11 +13,10 @@
     document.title = `${config.title} AR`;
     pageTitle.textContent = `${config.title} AR`;
     metaDescription.setAttribute("content", config.description);
+    projectTitle.textContent = config.title;
 
-    // Set header text and project number attribute for CSS
-    header.textContent = config.title;
-    if (config.projectNumber) {
-      header.setAttribute('data-project-number', config.projectNumber);
+    if (projectNumber && config.projectNumber) {
+      projectNumber.textContent = config.projectNumber;
     }
 
     if (footerLogo && config.logo) {
