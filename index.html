@@ -3,27 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title id="page-title">Q Rack AR</title>
-  <meta name="description" id="meta-description" content="View the Q Rack in AR on your mobile device." />
+  <title id="page-title"></title>
+  <meta name="description" id="meta-description" content="" />
   <meta name="theme-color" content="#E10600" />
-  
+
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="assets/dq_logo.png" type="image/png" />
 </head>
 <body>
 
-  <main>
-    <h1 id="project-title">Loading...</h1>
-    <div id="ar-button" role="region" aria-label="AR Launch Button"></div>
-    <div id="fallback" class="fallback"></div>
-  </main>
+  <h1 id="project-title">Loading...</h1>
+
+  <div id="ar-button" role="region" aria-label="AR Launch Button"></div>
+  <div class="fallback" id="fallback"></div>
 
   <footer>
     <img id="footer-logo" alt="Company Logo" loading="lazy" />
-    <p>© 2025 Display Quest. All rights reserved.</p>
+    <div>© 2025 Display Quest. All rights reserved.</div>
   </footer>
 
+  <!-- Load config first -->
   <script src="config.js"></script>
-  <script src="main.js" defer></script>
+  <!-- Load main logic -->
+  <script src="main.js"></script>
+
 </body>
 </html>
